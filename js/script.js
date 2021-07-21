@@ -33,7 +33,7 @@ function deleteListItem(){
 $('#list').sortable();
 
 $('#input').on('keypress', function(event){
-  if(event.which == 13){
+  if(event.which === 13){
     event.preventDefault();
     li.append(inputValue);
     $('#list').append(li);
