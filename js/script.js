@@ -32,12 +32,5 @@ function deleteListItem(){
 // 4. Reordering the items: 
 $('#list').sortable();
 
-// 5. adding newItem by clicking Enter-key:
-$('#input').keypress(function(event){
-  if(event.which == '13' ){
-    $('#list').append(li);
-  }
-});
-
 }
 
