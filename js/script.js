@@ -34,9 +34,16 @@ $('#list').sortable();
 
 $('#input').on('keypress', function(event){
   if(event.which === 13){
-    event.preventDefault();
-    $('#list').append(li);
+    $('li').each(function() {
+      event.preventDefault();
+      $(this).append(inputValue);
+      $('#list').append(li);
+    })
   }
+    /*.append($('#input').val());
+    $('#list').append(li);
+    event.preventDefault();*/
+  
 });
 
 }
